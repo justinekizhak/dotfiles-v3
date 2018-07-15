@@ -6,6 +6,9 @@
 # See LICENSE file in the project root for full information.
 # -----------------------------------------------------------------------------
 
+# Fixls 
+source ~/dotfiles/zsh/plugins/fixls.zsh
+
 # Powelevel9k  https://github.com/bhilburn/powerlevel9k
     source ~/dotfiles/zsh/plugins/powerlevel9k/powerlevel9k.zsh-theme
     # New line after prompt
@@ -25,6 +28,7 @@
     POWERLEVEL9K_VI_COMMAND_MODE_STRING="N"
     # using patched font
     POWERLEVEL9K_MODE='awesome-patched'
+    POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B0'
 
 # Zsh autosuggestions https://github.com/zsh-users/zsh-autosuggestions/
     source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -33,9 +37,6 @@
 
 # Zsh sytax highlighting https://github.com/zsh-users/zsh-syntax-highlighting
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Fixls 
-source ~/dotfiles/zsh/plugins/fixls.zsh
 
 # Vi mode
 source ~/dotfiles/zsh/plugins/vi-mode.plugin.zsh
