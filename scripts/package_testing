@@ -7,10 +7,11 @@
 # See LICENSE file in the project root for full information.
 # -----------------------------------------------------------------------------
 
+# Behaviour: Will delete any existing python virtualenv
+# create a new virtualenv
+# create a new package and install inside it.
 rm -rf venv
 virtualenv venv
 source venv/bin/activate
-pip-create_package develop
+pip-create_package
 pip install ./dist/*.tar.gz
-deactivate
-source venv/bin/activate

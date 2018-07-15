@@ -1,19 +1,39 @@
-############################################################################
-# Last Modified:    Mon 14 May 2018 02:52:21 PM IST
+#!/usr/bin/env bash
+# -----------------------------------------------------------------------------
+# Created: Sun 15 Jul 2018 14:55:24 IST
+# Last-Updated: Sun 15 Jul 2018 14:56:37 IST
 #
-# This file is part of my dotfiles
-# (see https://github.com/justinethomas/dotfiles)
-# Script to install YouCompleteMe provided it is downloaded in its default
-# location
+# install_ycm.sh is part of dotfiles
+# URL: https://gitlab.com/justinethomas/dotfiles
+# Description: Script to install YouCompleteMe for Vim.
 #
-# Copyright (C) 2018, Justine T Kizhakkinedath
+# Copyright (c) 2018, Justine T Kizhakkinedath
 # All rights reserved
 #
-# Licensed under the term of MIT License
-# See LICENSE file in the project root for full license information.
-############################################################################
+# Licensed under the terms of MIT License
+# See LICENSE file in the project root for full information.
+# -----------------------------------------------------------------------------
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+# IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+# DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+# OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+# OR OTHER DEALINGS IN THE SOFTWARE.
+#
+# -----------------------------------------------------------------------------
 
-#!/bin/bash
 has_vim=$(command -v vim >/dev/null)
 
 if ! $has_vim; then

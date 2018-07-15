@@ -1,16 +1,10 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Last Modified:    Fri 25 May 2018 12:19:11 PM IST
-"
-" This file is part of my dotfiles
-" (see https://github.com/justinethomas/dotfiles)
-" This file contains all my vim plugins and their settings
-"
-" Copyright (C) 2018, Justine T Kizhakkinedath
-" All rights reserved
-"
-" Licensed under the term of MIT License
-" See LICENSE file in the project root for full license information.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" -----------------------------------------------------------------------------
+"" Copyright (c) 2018, Justine T Kizhakkinedath
+"" All rights reserved
+""
+"" Licensed under the terms of MIT License
+"" See LICENSE file in the project root for full information.
+"" -----------------------------------------------------------------------------
 
 "Automatic reloading of .vimrc
     augroup sourcing_plugins
