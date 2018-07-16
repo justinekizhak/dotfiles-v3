@@ -11,7 +11,8 @@
 # create a new virtualenv
 # create a new package and install inside it.
 rm -rf venv
-virtualenv venv
+virtualenv -p python3 venv
 source venv/bin/activate
+# pip install -r requirements.txt
 pip-create_package
 pip install ./dist/*.tar.gz
