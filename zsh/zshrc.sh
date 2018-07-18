@@ -18,6 +18,9 @@ alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 # alias ls="ls -l"
 alias lsg="ls -la | ag"
 
+alias pip="pip3"
+alias python="python3"
+
 # For vim mappings:
   stty -ixon
 
