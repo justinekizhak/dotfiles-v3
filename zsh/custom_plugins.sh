@@ -6,7 +6,7 @@
 # See LICENSE file in the project root for full information.
 # -----------------------------------------------------------------------------
 
-# Fixls 
+# Fixls
 source ~/dotfiles/zsh/plugins/fixls.zsh
 
 # Powelevel9k  https://github.com/bhilburn/powerlevel9k
@@ -14,7 +14,7 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
     # New line after prompt
     POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
     # for contents on left and right
-    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs status root_indicator background_jobs command_execution_time newline os_icon)
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs status root_indicator background_jobs command_execution_time custom_now_playing newline os_icon)
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv vi_mode)
     # show error code
     POWERLEVEL9K_STATUS_OK=false
@@ -29,6 +29,9 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
     # using patched font
     POWERLEVEL9K_MODE='awesome-patched'
     POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B0'
+    POWERLEVEL9K_CUSTOM_NOW_PLAYING='~/dotfiles/scripts/nowplaying'
+    POWERLEVEL9K_CUSTOM_NOW_PLAYING_BACKGROUND='blue'
+    POWERLEVEL9K_CUSTOM_NOW_PLAYING_FOREGROUND='black'
 
 # Zsh autosuggestions https://github.com/zsh-users/zsh-autosuggestions/
     source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
