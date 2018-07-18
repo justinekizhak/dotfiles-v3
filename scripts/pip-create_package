@@ -14,7 +14,7 @@
 # else just pip-create_package
 rm -rf build dist devinstaller.egg-info/ venv
 if [ "$1" == "develop" ]; then
-    virtualenv -p python3 venv
+    python3 -m venv venv
     venv/bin/python setup.py develop
     venv/bin/pip install -r requirements.txt
 else

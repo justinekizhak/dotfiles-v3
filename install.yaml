@@ -48,6 +48,6 @@ Python venvs:
   - tensorflow
 
 Pyenvs installation:
-  - virtualenv -p python3 ~/python-virtualenvs/pyenv_name/
+  - python3 -m venv ~/python-virtualenvs/pyenv_name/
   - source ~/python-virtualenvs/pyenv_name/bin/activate
   - pip install pyenv_name

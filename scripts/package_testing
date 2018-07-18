@@ -11,7 +11,7 @@
 # create a new virtualenv
 # create a new package and install inside it.
 rm -rf venv
-virtualenv -p python3 venv
+python3 -m venv venv
 source venv/bin/activate
 # pip install -r requirements.txt
 pip-create_package
