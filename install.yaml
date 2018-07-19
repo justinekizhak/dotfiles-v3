@@ -51,3 +51,6 @@ Pyenvs installation:
   - python3 -m venv ~/python-virtualenvs/pyenv_name/
   - source ~/python-virtualenvs/pyenv_name/bin/activate
   - pip install pyenv_name
+
+Colorls:
+  - gem install colorls
