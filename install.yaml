@@ -21,7 +21,7 @@ Zsh:
 
 Tmux:
   - brew install tmux reattach-to-user-namespace
-  - ln -sf ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+  - ln -sf ~/dotfiles/tmux/tmux_manager.conf ~/.tmux.conf
 
 Vim plugins:
   - curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

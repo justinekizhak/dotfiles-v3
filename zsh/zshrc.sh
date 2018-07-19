@@ -14,10 +14,10 @@ export VISUAL=vim
 
 # Alias
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
-alias lsg="ls -la | ag"
+alias ls="colorls -A --sort-dirs --git-status"
+alias lsg="ls -l | ag"
 alias pip="pip3"
 alias python="python3"
-alias cls="colorls -A --sort-dirs --git-status"
 
 # For vim mappings:
   stty -ixon
