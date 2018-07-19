@@ -6,20 +6,18 @@
 # See LICENSE file in the project root for full information.
 # -----------------------------------------------------------------------------
 
+# Settings
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export TERM="xterm-256color"
+export VISUAL=vim
 
+# Alias
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
-
-# Settings
-  export VISUAL=vim
-
-# alias ls="ls -l"
 alias lsg="ls -la | ag"
-
 alias pip="pip3"
 alias python="python3"
+alias cls="colorls -A --sort-dirs --git-status"
 
 # For vim mappings:
   stty -ixon
@@ -38,6 +36,7 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
   bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
+# Add to path
 add-to-path $HOME/dotfiles/scripts
 add-to-path $HOME/Library/Python/3.6/bin
 add-to-path $HOME/.cargo/bin
