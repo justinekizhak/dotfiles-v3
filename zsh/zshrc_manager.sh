@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # Created: Sun 15 Jul 2018 14:58:36 IST
-# Last-Updated: Sun 15 Jul 2018 14:59:59 IST
+# Last-Updated: Wed  1 Aug 2018 02:28:32 IST
 #
 # zshrc_manager.sh is part of dotfiles
 # URL: https://gitlab.com/justinethomas/dotfiles
@@ -38,11 +38,11 @@
 if command -v tmux>/dev/null; then
  [ -z $TMUX ] && exec tmux
 else
- echo "tmux not installed. Run ./deploy to configure dependencies"
+ echo "tmux not installed."
 fi
 
 source ~/dotfiles/zsh/custom_functions.sh
 source ~/dotfiles/zsh/oh-my-zsh.sh
+source ~/dotfiles/zsh/zshrc.sh
 source ~/dotfiles/zsh/keybindings.sh
 source ~/dotfiles/zsh/custom_plugins.sh
-source ~/dotfiles/zsh/zshrc.sh
