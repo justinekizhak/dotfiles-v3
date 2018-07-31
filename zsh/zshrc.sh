@@ -13,11 +13,15 @@ export TERM="xterm-256color"
 export VISUAL=vim
 
 # Alias
-alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+alias emacs="emacsclient -c -a '' -n"
+alias fed='f -e "emacsclient -n -c"'
 alias ls="colorls -A --sort-dirs --git-status"
 alias lsg="ls -l | ag"
 alias pip="pip3"
+alias psg="ps ax | ag"
 alias python="python3"
+alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+alias gs="git status"
 
 # For vim mappings:
   stty -ixon

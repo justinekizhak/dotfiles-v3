@@ -54,3 +54,10 @@ source ~/dotfiles/zsh/plugins/vi-mode.plugin.zsh
 
 # Colorls
 source $(dirname $(gem which colorls))/tab_complete.sh
+
+# Fasd
+eval "$(fasd --init auto)"
+
+# This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
