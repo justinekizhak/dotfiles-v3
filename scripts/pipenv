@@ -6,13 +6,7 @@
 # Licensed under the terms of MIT License
 # See LICENSE file in the project root for full information.
 # -----------------------------------------------------------------------------
+# Install pip packages in new virtualenv.
 
-# Behaviour: Will delete any existing python virtualenv
-# create a new virtualenv
-# create a new package and install inside it.
-rm -rf venv
-python3 -m venv venv
-source venv/bin/activate
-# pip install -r requirements.txt
-pip-create_package
-pip install ./dist/*.tar.gz
+python3 -m venv ~/python-virtualenvs/"$1"
+~/python-virtualenvs/"$1"/bin/pip install "$1"

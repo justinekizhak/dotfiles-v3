@@ -1,0 +1,56 @@
+Before-install:
+  - mkdir -p ~/python-virtualenvs
+
+Vim:
+  - brew install vim && brew install macvim
+  - ln -sf ~/dotfiles/vim/vimrc.vim ~/.vimrc
+  - mkdir -p $HOME/.vim/undo
+
+Emacs:
+  - brew tap d12frosted/emacs-plus
+  - brew install emacs-plus aspell
+  - git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+  - ln -sf ~/dotfiles/emacs/spacemacs.el ~/.spacemacs
+  - cp ~/dotfiles/emacs/Spacemacs.app /Applications
+
+Zsh:
+  - brew install zsh
+  - sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh
+  - ln -sf ~/dotfiles/zsh/zshrc_manager.sh ~/.zshrc
+  - git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+Tmux:
+  - brew install tmux reattach-to-user-namespace
+  - ln -sf ~/dotfiles/tmux/tmux_manager.conf ~/.tmux.conf
+
+Vim plugins:
+  - curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  - vim -c 'PlugInstall' -c 'qa!'
+  - ~/dotfiles/vim/install_cmdT.sh
+  - ~/dotfiles/vim/install_ycm.sh
+  - brew install clang-format
+
+System Python:
+  - brew prune
+  - brew install python
+  - pip install -r ~/dotfiles/install/sys_python_req.txt
+
+Homebrew:
+  - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Brew packages:
+  - brew install $(cat ~/dotfiles/install/my_brews.txt)
+
+Python venvs:
+  - flask
+  - grip
+  - sphinx
+  - tensorflow
+
+Pyenvs installation:
+  - python3 -m venv ~/python-virtualenvs/pyenv_name/
+  - source ~/python-virtualenvs/pyenv_name/bin/activate
+  - pip install pyenv_name
+
+Colorls:
+  - gem install colorls

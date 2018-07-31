@@ -8,10 +8,15 @@
 # -----------------------------------------------------------------------------
 
 
-# source ~/python-virtualenvs/my_venv36/bin/activate
-if [ "$1" != "develop" ]; then
-    python3 setup.py develop
+# Instruction:
+# To create a package while developing use
+# pip-create_package develop
+# else just pip-create_package
+rm -rf build dist devinstaller.egg-info/ venv
+if [ "$1" == "develop" ]; then
+    python3 -m venv venv
+    venv/bin/python setup.py develop
+    venv/bin/pip install -r requirements.txt
 else
     python3 setup.py sdist bdist_wheel
 fi
-# deactivate
