@@ -1,6 +1,5 @@
-# -----------------------------------------------------------------------------
 # Created: Sun 15 Jul 2018 14:58:36 IST
-# Last-Updated: Sun 15 Jul 2018 14:59:59 IST
+# Last-Updated: Thu  9 Aug 2018 02:30:57 IST
 #
 # zshrc_manager.sh is part of dotfiles
 # URL: https://gitlab.com/justinethomas/dotfiles
@@ -34,15 +33,23 @@
 #
 # -----------------------------------------------------------------------------
 
+# # Profiling
+# zmodload zsh/zprof
+
 # Run tmux if exists
 if command -v tmux>/dev/null; then
  [ -z $TMUX ] && exec tmux
 else
- echo "tmux not installed. Run ./deploy to configure dependencies"
+ echo "tmux not installed."
 fi
 
+export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+[[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
+
 source ~/dotfiles/zsh/custom_functions.sh
-source ~/dotfiles/zsh/oh-my-zsh.sh
+# source ~/dotfiles/zsh/oh-my-zsh.sh
 source ~/dotfiles/zsh/keybindings.sh
 source ~/dotfiles/zsh/custom_plugins.sh
 source ~/dotfiles/zsh/zshrc.sh
+
+# zprof
