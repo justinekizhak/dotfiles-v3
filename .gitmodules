@@ -10,3 +10,6 @@
 [submodule "tmux/plugins/tmux-themepack"]
 	path = tmux/plugins/tmux-themepack
 	url = https://github.com/jimeh/tmux-themepack
+[submodule "zsh/zim"]
+	path = zsh/zim
+	url = https://github.com/justinekizhak/zimfw
