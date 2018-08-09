@@ -11,11 +11,12 @@ export TERM="xterm-256color"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export VISUAL=vim
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # Alias
 alias emacs="emacsclient -c -a '' -n"
 alias fed='f -e "emacsclient -n -c"'
-alias ls="colorls -A --sort-dirs --git-status"
+# alias ls="colorls -A --sort-dirs --git-status"
 alias lsg="ls -l | ag"
 alias pip="pip3"
 alias psg="ps ax | ag"
