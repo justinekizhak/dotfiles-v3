@@ -13,8 +13,8 @@ Emacs:
       - ln -s ~/dotfiles/emacs/spacemacs.emacs.d ~/.emacs.d
       - ln -sf ~/dotfiles/emacs/spacemacs.el ~/.spacemacs
   - Doom:
-      - git clone -b develop https://github.com/hlissner/doom-emacs ~/.emacs.d
-      - ln -s ~/dotfiles/emacs/doom.d ~/.doom.d
+      - ln -s ~/dotfiles/emacs/doom.emacs.d ~/.emacs.d
+      - mkdir ~/.doom.d && ln -s ~/dotfiles/emacs/doom.d/init.el ~/.doom.d/init.el
   - cp ~/dotfiles/emacs/apps/* /Applications/
 
 Zsh:
