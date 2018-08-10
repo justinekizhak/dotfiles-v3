@@ -15,9 +15,10 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # Alias
 alias emacs="emacsclient -c -a '' -n"
+alias emacs-gui="/usr/local/bin/emacs &"
 alias fed='f -e "emacsclient -n -c"'
 # alias ls="colorls -A --sort-dirs --git-status"
-alias lsg="ls -l | ag"
+alias lsg="ls -la | ag"
 alias pip="pip3"
 alias psg="ps ax | ag"
 alias python="python3"

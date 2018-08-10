@@ -9,9 +9,13 @@ Vim:
 Emacs:
   - brew tap d12frosted/emacs-plus
   - brew install emacs-plus aspell
-  - git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
-  - ln -sf ~/dotfiles/emacs/spacemacs.el ~/.spacemacs
-  - cp ~/dotfiles/emacs/Spacemacs.app /Applications
+  - Spacemacs:
+      - ln -s ~/dotfiles/emacs/spacemacs.emacs.d ~/.emacs.d
+      - ln -sf ~/dotfiles/emacs/spacemacs.el ~/.spacemacs
+  - Doom:
+      - git clone -b develop https://github.com/hlissner/doom-emacs ~/.emacs.d
+      - ln -s ~/dotfiles/emacs/doom.d ~/.doom.d
+  - cp ~/dotfiles/emacs/apps/* /Applications/
 
 Zsh:
   - brew install zsh
