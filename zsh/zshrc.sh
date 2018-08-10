@@ -46,3 +46,6 @@ fi
 add-to-path $HOME/dotfiles/scripts
 add-to-path $HOME/Library/Python/3.6/bin
 add-to-path $HOME/.cargo/bin
+
+
+prompt eriner blue blue
