@@ -10,10 +10,10 @@ Emacs:
   - brew tap d12frosted/emacs-plus
   - brew install emacs-plus aspell
   - Spacemacs:
-      - ln -sf ~/dotfiles/emacs/spacemacs/emacs_d ~/.emacs.d
-      - ln -sf ~/dotfiles/emacs/spacemacs/spacemacs.el ~/.spacemacs
+      - rm -rf ~/.emacs.d && ln -sf ~/dotfiles/emacs/spacemacs/emacs_d ~/.emacs.d
+      - rm -rf ~/.spacemacs && ln -sf ~/dotfiles/emacs/spacemacs/spacemacs.el ~/.spacemacs
   - Doom:
-      - ln -sf ~/dotfiles/emacs/doom/emacs_d ~/.emacs.d
+      - rm -rf ~/.emacs.d && ln -sf ~/dotfiles/emacs/doom/emacs_d ~/.emacs.d
       - mkdir -p ~/.doom.d && ln -sf ~/dotfiles/emacs/doom/doom.d/init.el ~/.doom.d/init.el
   - cp ~/dotfiles/emacs/apps/* /Applications/
 
