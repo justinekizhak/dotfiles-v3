@@ -26,3 +26,6 @@
   }
   zle -N git_prepare
   bindkey "^g" git_prepare
+
+zmodload zsh/complist
+bindkey -M menuselect '^[[Z' reverse-menu-complete
