@@ -13,8 +13,8 @@
 [submodule "zsh/zim"]
 	path = zsh/zim
 	url = https://github.com/justinekizhak/zimfw
-[submodule "emacs/spacemacs/emacs-d"]
-	path = emacs/spacemacs/emacs-d
+[submodule "emacs/spacemacs/emacs_d"]
+	path = emacs/spacemacs/emacs_d
 	url = https://github.com/syl20bnr/spacemacs.git
 	branch = develop
 [submodule "emacs/doom/emacs_d"]
