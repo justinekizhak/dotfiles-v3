@@ -9,6 +9,7 @@ Vim:
 Emacs:
   - brew tap d12frosted/emacs-plus
   - brew install emacs-plus aspell
+  - mkdir -p ~/.emacs-saves ~/.emacs-undo
   - Spacemacs:
       - rm -rf ~/.emacs.d && ln -sf ~/dotfiles/emacs/spacemacs/emacs_d ~/.emacs.d
       - rm -rf ~/.spacemacs && ln -sf ~/dotfiles/emacs/spacemacs/spacemacs.el ~/.spacemacs
@@ -61,3 +62,10 @@ Pyenvs installation:
 
 Colorls:
   - gem install colorls
+
+VSCode:
+  - Install "Settings sync" by "Shan Khan" https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+  - Press Shift + Alt + D it will ask your GitHub Gist ID.
+  - Generate a new GitHub token and enter.
+  - Enter Your Gist ID. Gist ID ---> 9daeed44c74f3ed7434f939ed07958d1
+  - Settings Downloaded. 
