@@ -8,15 +8,17 @@
 # -----------------------------------------------------------------------------
 
 
-# Instruction:
-# To create a package while developing use
-# pip-create_package develop
-# else just pip-create_package
-rm -rf build dist devinstaller.egg-info/ venv
-if [ "$1" == "develop" ]; then
-    python3 -m venv venv
-    venv/bin/python setup.py develop
-    venv/bin/pip install -r requirements.txt
-else
+echo
+"Behaviour: Will delete any existing python build files.
+Create package from scratch"
+
+read -p "Are you sure? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Deleting build folders..."
+    rm -rf build dist devinstaller.egg-info/
+    echo "Done. Creating packages..."
     python3 setup.py sdist bdist_wheel
+    echo "All done."
 fi
