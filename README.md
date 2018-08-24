@@ -5,7 +5,6 @@
 <a href="https://www.facebook.com/justinekizhak"><img src="http://i.imgur.com/P3YfQoD.png" alt="Facebook" align="right"></a>
 <br>
 - - -
-[![GitHub tag](https://img.shields.io/github/tag/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 <!-- {Put your badges here} -->
 - - -
@@ -14,17 +13,45 @@
 
 ## Table of contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Get Started](#get-started)
-- [Full Documentation](#full-documentation)
-- [License](#license)
+- [Dotfiles](#dotfiles)
+  - [Table of contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Get Started](#get-started)
+  - [Full Documentation](#full-documentation)
+  - [License](#license)
 
 ## Introduction
+
+They say your dotfiles will most likely be the longest project you ever work on.
+So for this reason, your dotfiles must be organized in a disciplined manner for 
+maintainability and extensibility.   
+My dotfiles are the direct reflection of my software development workflow and 
+practices of my past 3 years.   
+My dotfiles have undergone many transformation from single file vimrc to
+forking someone else's to building a simple yet sophisticated structure for
+housing more dotfiles.   
+One thing you may notice is that my workflow consists of diverse toolkit, 
+this makes it for easier adoption and exploration.
 
 **[Back to top](#table-of-contents)**
 
 ## Features
+
+Contains settings for 
+- Emacs
+  - Spacemacs
+  - Doom Emacs
+- Vim
+- Zsh
+  - Zim framework
+  - Oh my zsh framework
+  - and some other custom plugins and functions
+- Tmux
+- Custom bash scripts
+- Fonts
+- VSCode (only install instructions for dotfiles)
+- and some terminal settings
 
 **[Back to top](#table-of-contents)**
 
@@ -36,20 +63,27 @@
   Just copy paste lines in the file into terminal.
   All instructions are bash compatible.
 
+Instead of cloning I would strongly suggest forking. I make lots of changes
+to my dotfiles, which you may or may not like.  
+And also forking will help you in experimentation.
+
 **[Back to top](#table-of-contents)**
 
 ## Full Documentation
 
 For full documentation [read the docs]()
 
-Visit [website](https://justine.kizhak.com/dotfiles).
+Visit [website](https://justine.kizhak.com/dotfiles.html).
 
-Read [CHANGELOG], [CONTRIBUTING] guide.
+Read [CHANGELOG], [CODE_OF_CONDUCT], [CONTRIBUTING] guide.
 
 [CHANGELOG]: CHANGELOG.md
 [CONTRIBUTING]: CONTRIBUTING.md
+[CODE_OF_CONDUCT]: CODE_OF_CONDUCT.md
 
 ## License
+
+Licensed under the terms of MIT License.
 
 **[Back to top](#table-of-contents)**
 
