@@ -1,4 +1,4 @@
-*Proposed Updates*
+~"Type: Maintenance"
 
 **Present behaviour:**
 {Write here}
@@ -7,9 +7,9 @@
 {Write here}
 
 ### Description
-{Write the description of proposed update}
+{Write the description of proposed changes}
 
-/label ~Old
+/label ~"Type: Maintenance"
 
 ---
 

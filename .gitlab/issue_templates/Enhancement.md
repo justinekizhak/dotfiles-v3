@@ -1,4 +1,4 @@
-*Feature Request*
+~"Type: Enhancement"
 
 **Present behaviour:**
 {Write here}
@@ -9,7 +9,7 @@
 ### Description
 {Write the description of Feature}
 
-/label ~New
+/label ~"Type: Enhancement"
 
 ---
 
