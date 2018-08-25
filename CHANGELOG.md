@@ -6,49 +6,50 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [0.10.0]
 ### Added
-    - doom module.
+    - doom submodule.
     - doom init file.
     - spacemacs submodule.
 ### Update
-    - files.
     - install instructions.
-    - doom.
 
 ## [0.9.1]
 ### Added
-    - files.
+    - Contributing
+    - Code of conduct
     - README.
 ### Update
     - spacemacs.el
 
 ## [0.9.0]
 ### Added
-    - Added submodule zsh/zim
+    - New framework Zim
 ### Update
     - install.yaml for zimfw.
 
 ## [0.8.0]
+### Added
+    - New facility to install header package from local repo.
 
 ## [0.7.0]
+### Added
+    - Issue templates
 
 ## [0.6.0]
 ### Added
     - tmux themepack and clean up.
 ### Update
     - zshrc.
+    - tmux
 
 ## [0.5.0]
 ### Added
-    - Add new script.
+    - Script to install packages in separate venv.
 
 ## [0.4.0]
 ### Added
-    - install.yaml
     - spacemacs app.
-    - alias for python3.
     - install files.
     - copy feature for tmux.
-    Uncomment plugins.
 ### Update
     - spacemacs.el.
     - scripts
@@ -66,6 +67,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
     - scripts folder
     - zsh
     - submodules
+        - powerlevel9k
+        - zsh-autosuggestions
+        - zsh-sytax-hilighting
 
 ## [0.1.0]
 
