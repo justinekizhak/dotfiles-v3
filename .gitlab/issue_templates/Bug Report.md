@@ -1,4 +1,4 @@
-*Bug Report*
+~"Type: Bug"
 
 ### Prerequisites
 
@@ -24,7 +24,7 @@ OS:
 App version:
 Other dependencies:
 
-/label ~Old ~Bug
+/label ~"Type: Bug"
 
 ---
 
