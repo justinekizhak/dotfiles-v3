@@ -212,7 +212,7 @@ values."
    ;; 'all-the-icons, 'custom, 'vim-powerline or 'vanilla
    ;; or a list with `car' one of the previous values and properties
    ;; one of the following: `:separator' or `:separator-scale'
-   dotspacemacs-mode-line-theme 'spacemacs
+   dotspacemacs-mode-line-theme 'doom
    ;; If non nil then the last auto saved layouts are resume automatically upon
    ;; start. (default nil)
    dotspacemacs-auto-resume-layouts nil
